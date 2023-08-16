@@ -30,9 +30,10 @@ class ViewController: UIViewController {
         let userGotItRight = quizBrain.checkAnswer(userAnswer)
         
         if userGotItRight {
-            sender.backgroundColor = UIColor.green
+            sender.backgroundColor = UIColor(red: 0.36, green: 0.51, blue: 0.36, alpha: 1.00)
+            sender.layer.cornerRadius = 5
         } else {
-            sender.backgroundColor = UIColor.red
+            sender.backgroundColor = UIColor(red: 0.49, green: 0.09, blue: 0.07, alpha: 1.00)
         }
         
         quizBrain.nextQuestion()
